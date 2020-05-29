@@ -1,0 +1,38 @@
+apiVersion: kni.akraino.org/v1alpha1
+kind: SiteConfig
+metadata:
+  name: notImportantHere
+config: {}
+provisioningInfrastructure:
+  hosts:
+    masterBootInterface: enp134s0f0 
+    workerBootInterface: enp134s0f0
+    masterSdnInterface: enp134s0f1
+    workerSdnInterface: enp134s0f1
+
+  network:
+    provisioningIpCidr: 172.16.102.0/24 
+    provisioningDHCPStart: 172.16.102.101
+    provisioningDHCPEnd: 172.16.102.150 
+    baremetalIpCidr: 172.16.101.0/24
+    baremetalDHCPStart: 172.16.101.101
+    baremetalDHCPEnd: 172.16.101.150
+    baremetalGWIP: 172.16.101.254
+    dns:
+      cluster: 172.16.101.254
+      external1: 8.8.8.8
+
+  provHost:
+    interfaces:
+      provisioning: em2 
+      provisioningIpAddress: 172.16.102.100
+      baremetal: em1
+      baremetalIpAddress: 172.16.101.100
+      external: p1p1
+    bridges:
+      provisioning: provisioning 
+      baremetal: baremetal
+    services:
+      baremetalDHCP: true 
+      clusterDNS: true 
+      baremetalGateway: false
