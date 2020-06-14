@@ -29,73 +29,73 @@ platform:
         bmc:
            address: ipmi://172.16.144.202 
            credentialsName: poweredge-lab-ipmi 
-           bootMACAddress: 1C:34:DA:50:C1:B0
-           sdnMacAddress: 1C:34:DA:50:C1:B1
-           hardwareProfile: default
-           osProfile: 
-              type: rhcos
-              pxe: bios
-              install_dev: sda  
+        bootMACAddress: 1C:34:DA:50:C1:B0
+        sdnMacAddress: 1C:34:DA:50:C1:B1
+        hardwareProfile: default
+        osProfile: 
+           type: rhcos
+           pxe: bios
+           install_dev: sda  
       - name: master-1
         role: master
         bmc:
            address: ipmi://172.16.144.203
            credentialsName: poweredge-lab-ipmi
-           bootMACAddress: 1C:34:DA:50:C2:08
-           sdnMacAddress: 1C:34:DA:50:C2:09
-           hardwareProfile: default
-           osProfile:
-              type: rhcos
-              pxe: bios
-              install_dev: sda
+        bootMACAddress: 1C:34:DA:50:C2:08
+        sdnMacAddress: 1C:34:DA:50:C2:09
+        hardwareProfile: default
+        osProfile:
+           type: rhcos
+           pxe: bios
+           install_dev: sda
       - name: master-2
         role: master
         bmc:
            address: ipmi://172.16.144.204
            credentialsName: poweredge-lab-ipmi
-           bootMACAddress: B8:59:9F:15:86:FC
-           sdnMacAddress: B8:59:9F:15:86:FD
-           hardwareProfile: default
-           osProfile:
-              type: rhcos
-              pxe: bios
-              install_dev: sda
+        bootMACAddress: B8:59:9F:15:86:FC
+        sdnMacAddress: B8:59:9F:15:86:FD
+        hardwareProfile: default
+        osProfile:
+           type: rhcos
+           pxe: bios
+           install_dev: sda
       - name: worker-0
         role: worker
         bmc: 
            address: ipmi://172.16.144.205
            credentialsName: poweredge-lab-ipmi
-           bootMACAddress: 1C:34:DA:50:C0:48
-           sdnMacAddress: 1C:34:DA:50:C0:49
-           hardwareProfile: default
-           osProfile: 
-              type: rhcos
-              pxe: bios    
-              install_dev: sda  
+        bootMACAddress: 1C:34:DA:50:C0:48
+        sdnMacAddress: 1C:34:DA:50:C0:49
+        hardwareProfile: default
+        osProfile: 
+           type: rhcos
+           pxe: bios    
+           install_dev: sda  
       - name: worker-1
         role: worker
         bmc: 
            address: ipmi://172.16.144.206
            credentialsName: poweredge-lab-ipmi
-           bootMACAddress: B8:59:9F:15:87:54
-           sdnMacAddress: B8:59:9F:15:87:55
-           hardwareProfile: default
-           osProfile: 
-              type: rhcos
-              pxe: bios
-              install_dev: sda  
+        bootMACAddress: B8:59:9F:15:87:54
+        sdnMacAddress: B8:59:9F:15:87:55
+        hardwareProfile: default
+        osProfile: 
+           type: rhcos
+           pxe: bios
+           install_dev: sda  
       - name: worker-2
         role: worker
         bmc: 
            address: ipmi://172.16.144.207
            credentialsName: poweredge-lab-ipmi
-           bootMACAddress: 1C:34:DA:4B:50:9C
-           sdnMacAddress: 1C:34:DA:4B:50:9D
-           hardwareProfile: default
-           osProfile: 
-              type: rhcos
-              pxe: bios
-              install_dev: sda  
+        bootMACAddress: 1C:34:DA:4B:50:9C
+        sdnMacAddress: 1C:34:DA:4B:50:9D
+        hardwareProfile: default
+        osProfile: 
+           type: rhcos
+           pxe: bios
+           install_dev: sda  
 pullSecret: 'PULL_SECRET'  
 sshKey: |
    SSH_PUB_KEY
