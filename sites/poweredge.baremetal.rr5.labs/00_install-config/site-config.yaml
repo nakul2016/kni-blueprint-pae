@@ -5,10 +5,10 @@ metadata:
 config: {}
 provisioningInfrastructure:
   hosts:
-    masterBootInterface: enp134s0f0 
-    workerBootInterface: enp134s0f0
-    masterSdnInterface: enp134s0f1
-    workerSdnInterface: enp134s0f1
+    masterBootInterface: ens1f0 
+    workerBootInterface: ens1f0
+    masterSdnInterface: ens1f1
+    workerSdnInterface: ens1f1
 
   network:
     provisioningIpCidr: 172.16.102.0/24 
@@ -19,7 +19,7 @@ provisioningInfrastructure:
     baremetalDHCPEnd: 172.16.101.150
     baremetalGWIP: 172.16.101.254
     dns:
-      cluster: 172.16.101.254
+      cluster: 172.16.101.200
       external1: 8.8.8.8
 
   provHost:
