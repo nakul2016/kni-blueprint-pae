@@ -34,7 +34,7 @@ platform:
         hardwareProfile: default
         osProfile: 
            type: rhcos
-           pxe: bios
+           pxe: uefi
            install_dev: sda  
       - name: master-1
         role: master
@@ -46,7 +46,7 @@ platform:
         hardwareProfile: default
         osProfile:
            type: rhcos
-           pxe: bios
+           pxe: uefi
            install_dev: sda
       - name: master-2
         role: master
@@ -58,7 +58,7 @@ platform:
         hardwareProfile: default
         osProfile:
            type: rhcos
-           pxe: bios
+           pxe: uefi
            install_dev: sda
       - name: worker-0
         role: worker
@@ -70,7 +70,7 @@ platform:
         hardwareProfile: default
         osProfile: 
            type: rhcos
-           pxe: bios    
+           pxe: uefi    
            install_dev: sda  
       - name: worker-1
         role: worker
@@ -82,7 +82,7 @@ platform:
         hardwareProfile: default
         osProfile: 
            type: rhcos
-           pxe: bios
+           pxe: uefi
            install_dev: sda  
       - name: worker-2
         role: worker
@@ -94,7 +94,7 @@ platform:
         hardwareProfile: default
         osProfile: 
            type: rhcos
-           pxe: bios
+           pxe: uefi
            install_dev: sda  
 pullSecret: 'PULL_SECRET'  
 sshKey: |

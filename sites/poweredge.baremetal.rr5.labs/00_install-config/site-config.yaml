@@ -5,10 +5,10 @@ metadata:
 config: {}
 provisioningInfrastructure:
   hosts:
-    masterBootInterface: ens1f0 
-    workerBootInterface: ens1f0
-    masterSdnInterface: ens1f1
-    workerSdnInterface: ens1f1
+    masterBootInterface: eno1
+    workerBootInterface: eno1
+    masterSdnInterface: eno2
+    workerSdnInterface: eno2
 
   network:
     provisioningIpCidr: 192.168.112.0/24 
