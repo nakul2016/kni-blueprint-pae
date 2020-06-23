@@ -11,23 +11,23 @@ provisioningInfrastructure:
     workerSdnInterface: ens1f1
 
   network:
-    provisioningIpCidr: 172.16.102.0/24 
-    provisioningDHCPStart: 172.16.102.101
-    provisioningDHCPEnd: 172.16.102.150 
-    baremetalIpCidr: 172.16.101.0/24
-    baremetalDHCPStart: 172.16.101.101
-    baremetalDHCPEnd: 172.16.101.150
-    baremetalGWIP: 172.16.101.254
+    provisioningIpCidr: 192.168.112.0/24 
+    provisioningDHCPStart: 192.168.112.101
+    provisioningDHCPEnd: 192.168.112.150 
+    baremetalIpCidr: 192.168.111.0/24
+    baremetalDHCPStart: 192.168.111.101
+    baremetalDHCPEnd: 192.168.111.150
+    baremetalGWIP: 192.168.111.2
     dns:
-      cluster: 172.16.101.200
+      cluster: 192.168.111.200
       external1: 8.8.8.8
 
   provHost:
     interfaces:
       provisioning: em2 
-      provisioningIpAddress: 172.16.102.100
+      provisioningIpAddress: 192.168.112.100
       baremetal: em1
-      baremetalIpAddress: 172.16.101.100
+      baremetalIpAddress: 192.168.111.100
       external: p1p1
     bridges:
       provisioning: provisioning 

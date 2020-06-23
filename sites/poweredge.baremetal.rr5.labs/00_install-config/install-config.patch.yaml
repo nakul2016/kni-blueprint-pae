@@ -19,9 +19,9 @@ networking:
   - 172.30.0.0/16
 platform:
    none: {}
-   apiVIP: 172.16.101.53        
-   ingressVIP: 172.16.101.52 
-   dnsVIP: 172.16.101.51 
+   apiVIP: 192.168.111.53        
+   ingressVIP: 192.168.111.52 
+   dnsVIP: 192.168.111.51 
    hosts:
       # Master nodes are always RHCOS
       - name: master-0
