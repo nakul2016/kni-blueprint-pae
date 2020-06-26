@@ -29,8 +29,8 @@ platform:
         bmc:
            address: ipmi://172.16.144.202 
            credentialsName: poweredge-lab-ipmi 
-        bootMACAddress: 1C:34:DA:50:C1:B0
-        sdnMacAddress: 1C:34:DA:50:C1:B1
+        bootMACAddress: 1C:34:DA:50:C1:B1
+        sdnMacAddress: 1C:34:DA:49:04:48
         hardwareProfile: default
         osProfile: 
            type: rhcos
@@ -41,8 +41,8 @@ platform:
         bmc:
            address: ipmi://172.16.144.203
            credentialsName: poweredge-lab-ipmi
-        bootMACAddress: 1C:34:DA:50:C2:08
-        sdnMacAddress: 1C:34:DA:50:C2:09
+        bootMACAddress: 1C:34:DA:50:C2:09
+        sdnMacAddress: 1C:34:DA:49:0F:E0
         hardwareProfile: default
         osProfile:
            type: rhcos
@@ -53,8 +53,8 @@ platform:
         bmc:
            address: ipmi://172.16.144.204
            credentialsName: poweredge-lab-ipmi
-        bootMACAddress: B8:59:9F:15:86:FC
-        sdnMacAddress: B8:59:9F:15:86:FD
+        bootMACAddress: B8:59:9F:15:86:FD
+        sdnMacAddress: 1C:34:DA:49:11:A0
         hardwareProfile: default
         osProfile:
            type: rhcos
@@ -65,8 +65,8 @@ platform:
         bmc: 
            address: ipmi://172.16.144.205
            credentialsName: poweredge-lab-ipmi
-        bootMACAddress: 1C:34:DA:50:C0:48
-        sdnMacAddress: 1C:34:DA:50:C0:49
+        bootMACAddress: 1C:34:DA:50:C0:49
+        sdnMacAddress: 1C:34:DA:49:04:58
         hardwareProfile: default
         osProfile: 
            type: rhcos
@@ -77,8 +77,8 @@ platform:
         bmc: 
            address: ipmi://172.16.144.206
            credentialsName: poweredge-lab-ipmi
-        bootMACAddress: B8:59:9F:15:87:54
-        sdnMacAddress: B8:59:9F:15:87:55
+        bootMACAddress: B8:59:9F:15:87:55
+        sdnMacAddress: 1C:34:DA:49:0F:B8
         hardwareProfile: default
         osProfile: 
            type: rhcos
@@ -89,8 +89,8 @@ platform:
         bmc: 
            address: ipmi://172.16.144.207
            credentialsName: poweredge-lab-ipmi
-        bootMACAddress: 1C:34:DA:4B:50:9C
-        sdnMacAddress: 1C:34:DA:4B:50:9D
+        bootMACAddress: 1C:34:DA:4B:50:9D
+        sdnMacAddress: 1C:34:DA:49:09:D8
         hardwareProfile: default
         osProfile: 
            type: rhcos

@@ -5,15 +5,15 @@ metadata:
 config: {}
 provisioningInfrastructure:
   hosts:
-    masterBootInterface: eno1
-    workerBootInterface: eno1
-    masterSdnInterface: eno2
-    workerSdnInterface: eno2
+    masterBootInterface: eno2
+    workerBootInterface: eno2
+    masterSdnInterface: ens1f0
+    workerSdnInterface: ens1f0
 
   network:
-    provisioningIpCidr: 192.168.112.0/24 
-    provisioningDHCPStart: 192.168.112.101
-    provisioningDHCPEnd: 192.168.112.150 
+    provisioningIpCidr: 172.16.102.0/24 
+    provisioningDHCPStart: 172.16.102.101
+    provisioningDHCPEnd: 172.16.102.150 
     baremetalIpCidr: 192.168.111.0/24
     baremetalDHCPStart: 192.168.111.101
     baremetalDHCPEnd: 192.168.111.150
@@ -25,10 +25,10 @@ provisioningInfrastructure:
   provHost:
     interfaces:
       provisioning: em2 
-      provisioningIpAddress: 192.168.112.100
-      baremetal: em1
+      provisioningIpAddress: 172.16.102.100
+      baremetal: p1p1
       baremetalIpAddress: 192.168.111.100
-      external: p1p1
+      external: em1
     bridges:
       provisioning: provisioning 
       baremetal: baremetal
